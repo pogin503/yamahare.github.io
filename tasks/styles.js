@@ -1,12 +1,19 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
-const autoprefixer = require('gulp-autoprefixer')
+const postcss = require('gulp-postcss')
+const cssnano = require('cssnano')
+const autoprefixer = require('autoprefixer')
 const { paths } = require('./config')
+// postcssのプラグイン
 
 function styles() {
+  const plugins = [
+    autoprefixer({ browsers: ["last 2 versions", "ie >= 11", "Android >= 4"] }),
+    cssnano
+  ];
   return gulp.src(paths.styles.src)
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer(['last 2 versions', 'ie >= 8', 'Android >= 4', 'iOS >= 8']))
+    .pipe(postcss(plugins))
     .pipe(gulp.dest(paths.styles.dest))
 }
 
