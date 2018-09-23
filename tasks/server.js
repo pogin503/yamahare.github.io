@@ -1,6 +1,4 @@
-const gulp = require('gulp')
 const browserSync = require('browser-sync')
-
 const server = browserSync.create()
 
 // 開発サーバ再起動

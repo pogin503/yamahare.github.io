@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const clean = require('./tasks/clean.js')
 const { paths } = require('./tasks/config')
 const { reload, serve } = require('./tasks/server')
 const styles = require('./tasks/styles.js')
@@ -11,10 +12,10 @@ function watch () {
 
 // 開発用
 gulp.task('dev', gulp.series(
-  gulp.parallel(styles, templates), serve, watch
+  clean, gulp.parallel(styles, templates), serve, watch
 ))
 
 // 本番用
 gulp.task('build', gulp.series(
-  gulp.parallel(styles, templates)
+  clean, gulp.parallel(styles, templates)
 ))
