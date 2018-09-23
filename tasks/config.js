@@ -5,11 +5,11 @@ module.exports = {
   paths: {
     styles: {
       src: `${ASSET_ROOT}/sass/**/*.scss`,
-      dest: `${DEST_ROOT}/styles`,
+      dest: `${DEST_ROOT}/css`,
     },
     templates: {
       src: `${ASSET_ROOT}/pug/**/*.pug`,
-      dest: `${DEST_ROOT}/html`,
+      dest: `${DEST_ROOT}/`,
     }
   }
 }

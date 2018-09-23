@@ -1,8 +1,7 @@
 $gray: #eee;
 
 body {
-  font-size: 30px;
-  background-color: $gray;
+  font-size: 15px;
 }
 
 h1{
@@ -12,5 +11,6 @@ h1{
 .testbox{
   border-radius: 4px;
   display: flex;
+  background-color: $gray;
 }
 
