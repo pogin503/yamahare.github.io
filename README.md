@@ -3,3 +3,9 @@
 
 [こちら](https://yamahare.github.io/)
 
+# rootディレクトリ
+public配下がrootになっている
+下記コマンドでmasterブランチをすすめる
+
+git subtree push --prefix public/ origin master
+
