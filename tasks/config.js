@@ -6,6 +6,10 @@ module.exports = {
     styles: {
       src: `${ASSET_ROOT}/sass/**/*.scss`,
       dest: `${DEST_ROOT}/styles`,
+    },
+    templates: {
+      src: `${ASSET_ROOT}/pug/**/*.pug`,
+      dest: `${DEST_ROOT}/html`,
     }
   }
 }
