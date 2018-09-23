@@ -9,6 +9,12 @@ function watch () {
   gulp.watch(paths.templates.src, gulp.series(templates, reload))
 }
 
+// 開発用
 gulp.task('dev', gulp.series(
   gulp.parallel(styles, templates), serve, watch
+))
+
+// 本番用
+gulp.task('build', gulp.series(
+  gulp.parallel(styles, templates)
 ))
