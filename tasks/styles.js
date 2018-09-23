@@ -9,7 +9,7 @@ const { paths } = require('./config')
 function styles() {
   const plugins = [
     autoprefixer({ browsers: ["last 2 versions", "ie >= 11", "Android >= 4"] }),
-    cssnano
+    cssnano({ autoprefixer: false })
   ];
   return gulp.src(paths.styles.src)
     .pipe(sass().on('error', sass.logError))
