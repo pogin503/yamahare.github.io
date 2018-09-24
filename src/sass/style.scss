@@ -1,3 +1,8 @@
-@import-normalize;
+//CSS設計はFLOCSS
 
-@import "./foundation/**";
+// bootstrap4.0で使用されているresetとnormalizeの次にきてるやつ
+// rem、smartphone重視など
+@import "reboot.css/dist/reboot.css";
+
+// 
+@import "foundation/**";

@@ -19,6 +19,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.9",
+    "postcss-import": "^12.0.0",
     "pug": "^2.0.3",
     "reboot.css": "^1.0.4",
     "webpack": "^4.19.1",
