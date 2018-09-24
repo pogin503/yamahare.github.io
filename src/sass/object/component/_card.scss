@@ -1,8 +1,8 @@
 .c-card {
+  display: inline-block;
   margin: 1rem;
   padding: 0.5rem;
-  width: 10rem;
-  height: 10rem;
+  width: 80%;
   border-radius: 0.5rem;
   background-color: #eee;
   border: 1px solid #ddd;
@@ -11,5 +11,6 @@
   &__userimg{
     width: 5rem;
     border-radius: 50%;
+    margin-bottom: 1rem;
   }
 }
