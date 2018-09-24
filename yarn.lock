@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@csstools/normalize.css@^9.0.1":
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
-
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.4.tgz#bfd5b0d0d1ba13e351dff65b6e52783b816826c8"
@@ -737,7 +733,7 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@^4.0.0, browserslist@^4.1.0, browserslist@^4.1.1:
+browserslist@^4.0.0, browserslist@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.1.1.tgz#328eb4ff1215b12df6589e9ab82f8adaa4fc8cd6"
   dependencies:
@@ -3873,12 +3869,6 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
 
-postcss-browser-comments@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-browser-comments/-/postcss-browser-comments-2.0.0.tgz#dc48d6a8ddbff188a80a000b7393436cb18aed88"
-  dependencies:
-    postcss "^7.0.2"
-
 postcss-calc@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/postcss-calc/-/postcss-calc-6.0.1.tgz#3d24171bbf6e7629d422a436ebfe6dd9511f4330"
@@ -4061,15 +4051,6 @@ postcss-normalize-whitespace@^4.0.0:
   dependencies:
     postcss "^6.0.0"
     postcss-value-parser "^3.0.0"
-
-postcss-normalize@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-7.0.1.tgz#eb51568d962b8aa61a8318383c8bb7e54332282e"
-  dependencies:
-    "@csstools/normalize.css" "^9.0.1"
-    browserslist "^4.1.1"
-    postcss "^7.0.2"
-    postcss-browser-comments "^2.0.0"
 
 postcss-ordered-values@^4.0.0:
   version "4.1.0"
@@ -4419,6 +4400,10 @@ readdirp@^2.0.0:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
+
+reboot.css@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/reboot.css/-/reboot.css-1.0.4.tgz#a5940caf7bd09fb417cb7145e1e01a74fa13d8fe"
 
 rechoir@^0.6.2:
   version "0.6.2"
