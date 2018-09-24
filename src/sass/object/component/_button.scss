@@ -1,0 +1,12 @@
+.c-button {
+  background-color: red;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: #FFF;
+  text-decoration: none;
+  &:hover{
+    background-color: #f9c500;
+  }
+}
+
