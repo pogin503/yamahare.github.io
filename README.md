@@ -10,6 +10,9 @@ public配下がrootになっている
 
 git subtree push --prefix public/ origin master
 
+# 開発時メモ
+基本的にgulp devを実行して開発する。
+
 
 # 本ページをつくるにあたり参考にさせていただいた記事
 
