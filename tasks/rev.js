@@ -4,6 +4,7 @@ const revdel = require('gulp-rev-delete-original');
 const filter = require('gulp-filter');
 const { paths } = require('./config')
 
+// キャッシュ対策のためfile名にhashをつける
 function add_hash () {
   const excepHtml = filter(['**/*', '!**/index.html'], {restore: true});
 

@@ -1,6 +1,7 @@
 const ASSET_ROOT = 'src'
 const DEST_ROOT = 'public'
 
+// 各ファイルのパス
 module.exports = {
   paths: {
     manifest: {

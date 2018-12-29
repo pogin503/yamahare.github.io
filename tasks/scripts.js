@@ -4,6 +4,7 @@ const webpackStream = require('webpack-stream')
 const webpackConfig = require('../webpack.config')
 const { paths } = require('./config')
 
+// jsをwebpackをつかってbundleする
 function scripts () {
   return gulp.src(paths.scripts.src)
     .pipe(webpackStream(

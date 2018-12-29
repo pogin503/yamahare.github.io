@@ -2,6 +2,7 @@ const gulp = require('gulp')
 const imagemin = require('gulp-imagemin')
 const { paths } = require('./config')
 
+// ファイルの圧縮
 function images() {
   return gulp.src(paths.images.src)
     .pipe(imagemin())
