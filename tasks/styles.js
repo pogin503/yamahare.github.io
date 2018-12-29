@@ -4,13 +4,13 @@ const postcss = require('gulp-postcss')
 const cssnano = require('cssnano')
 const autoprefixer = require('autoprefixer')
 const sassGlob = require('gulp-sass-glob')
-const cssImport = require("postcss-import")
+// const cssImport = require("postcss-import")
 const { paths } = require('./config')
 // postcssのプラグイン
 
 function styles() {
   const plugins = [
-    cssImport({ path: [ 'node_modules' ] }),
+    // cssImport({ path: [ 'node_modules' ] }),
     autoprefixer({ browsers: ["last 2 versions", "ie >= 11", "Android >= 4"] }),
     cssnano({ autoprefixer: false })
   ];

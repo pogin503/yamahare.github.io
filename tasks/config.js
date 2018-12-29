@@ -3,6 +3,10 @@ const DEST_ROOT = 'public'
 
 module.exports = {
   paths: {
+    manifest: {
+      src: `${DEST_ROOT}/**/*`,
+      dest: `${DEST_ROOT}/`,
+    },
     styles: {
       src: `${ASSET_ROOT}/sass/**/*.scss`,
       dest: `${DEST_ROOT}/css`,
