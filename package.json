@@ -6,8 +6,8 @@
   "author": "yamahare <jidai.norio@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "dev": "webpack --progress --colors --watch"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
