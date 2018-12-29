@@ -5,6 +5,7 @@ const templates = require('./tasks/templates')
 const scripts = require('./tasks/scripts')
 const images = require('./tasks/images')
 const add_hash = require('./tasks/rev')
+const printsize = require('./tasks/printsize')
 const { paths } = require('./tasks/config')
 const { reload, serve } = require('./tasks/server')
 
@@ -14,6 +15,11 @@ function watch () {
   gulp.watch(paths.scripts.watch, gulp.series(scripts, reload))
   gulp.watch(paths.images.src, gulp.series(images, reload))
 }
+
+// fileサイズ確認
+gulp.task('report', gulp.series(
+  printsize,
+))
 
 // 開発用
 gulp.task('dev', gulp.series(
