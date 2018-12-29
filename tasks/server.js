@@ -12,7 +12,9 @@ function serve(done){
   server.init({
     server: {
       baseDir: './public'
-    }
+    },
+    open: 'external',
+    port: 9000
   })
   done()
 }
