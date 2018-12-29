@@ -5,6 +5,7 @@ const templates = require('./tasks/templates')
 const scripts = require('./tasks/scripts')
 const images = require('./tasks/images')
 const add_hash = require('./tasks/rev')
+const change_hash_of_html_link = require('./tasks/rev_rewrite')
 const printsize = require('./tasks/printsize')
 const { paths } = require('./tasks/config')
 const { reload, serve } = require('./tasks/server')
@@ -25,7 +26,8 @@ gulp.task('report', gulp.series(
 gulp.task('dev', gulp.series(
   clean,
   gulp.parallel(styles, templates, scripts, images),
-  add_hash, serve, watch
+  add_hash, change_hash_of_html_link,
+  serve, watch
 ))
 
 // 本番用
