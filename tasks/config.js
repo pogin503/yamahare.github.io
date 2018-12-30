@@ -23,7 +23,7 @@ module.exports = {
     scripts: {
       src: `${ASSET_ROOT}/js/main.js`,
       dest: `${DEST_ROOT}/js`,
-      watch: `${ASSET_ROOT}/js/**/*.js`,
+      watch: `${ASSET_ROOT}/js/**/*`,
     }
   }
 }

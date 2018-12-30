@@ -1,2 +1,12 @@
-console.log('test')
-console.log([1, 2, 3].map(n => n ** 2));
+import Vue from 'vue'
+import Test from './components/test.vue'
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: "Can you say hello?"
+    },
+    components: { Test }
+  })
+})
