@@ -26,7 +26,6 @@ gulp.task('report', gulp.series(
 gulp.task('dev', gulp.series(
   clean,
   gulp.parallel(styles, templates, scripts, images),
-  add_hash, change_hash_of_html_link,
   serve, watch
 ))
 
@@ -34,5 +33,5 @@ gulp.task('dev', gulp.series(
 gulp.task('build', gulp.series(
   clean,
   gulp.parallel(styles, templates, scripts, images),
-  add_hash
+  add_hash, change_hash_of_html_link,
 ))
