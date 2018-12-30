@@ -6,8 +6,8 @@
   "author": "yamahare <jidai.norio@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build"
+    "dev": "cross-env NODE_ENV=development gulp dev",
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -16,6 +16,7 @@
     "babel-loader": "^8.0.4",
     "browser-sync": "^2.24.7",
     "bulma": "^0.7.2",
+    "cross-env": "^5.2.0",
     "cssnano": "^4.1.0",
     "del": "^3.0.0",
     "gulp": "^4.0.0",

@@ -1,9 +1,8 @@
 const path = require('path');
-
-const MODE = 'development';
+const env = process.env.NODE_ENV
 
 module.exports = {
-  mode: MODE,
+  mode: env || 'development',
   entry: './src/js/main.js',
   output: {
     path: path.resolve(__dirname,  './public/js/'),

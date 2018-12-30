@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('test');\nconsole.log([1, 2, 3].map(function (n) {\n  return Math.pow(n, 2);\n}));\nconsole.log([1, 2, 3].map(function (n) {\n  return Math.pow(n, 2);\n}));\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("console.log('test');\nconsole.log([1, 2, 3].map(function (n) {\n  return Math.pow(n, 2);\n}));\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ })
 
