@@ -8,26 +8,28 @@ html(lang="ja")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Kosugi+Maru")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
   body
-    .l-main
-      h1 やまはれについて👽
-      .c-card
-        img.c-card__userimg(src="image/yamahare.jpg")
-        p やまはれ
-        p 東京都在住
-        p 1990年1月27日生まれ
-        a(href="https://twitter.com/yamahare" target="_blank")
-          i.fab.fa-twitter
-          | @yamahare
-      p よろしくお願いしますー💯
-      a.button.is-info(href="#") クリック！
-
-      h2 つくったもの
-      .c-card
-        a(href="http://magazine-checker.net" target="_blank")
-          p Magazine Checker
-          img.c-card__magazineimg(src="image/magazine-checker.png")
     #app
-      p(v-text="message")
-      test
+      .l-main
+        h1 やまはれについて👽
+        .c-card
+          img.c-card__userimg(src="image/yamahare.jpg")
+          p やまはれ
+          p 東京都在住
+          p 1990年1月27日生まれ
+          a(href="https://twitter.com/yamahare" target="_blank")
+            i.fab.fa-twitter
+            | @yamahare
+        p よろしくお願いしますー💯
+        a.button.is-info(@click="showModal=true") クリック！
+
+        h2 つくったもの
+        .c-card
+          a(href="http://magazine-checker.net" target="_blank")
+            p Magazine Checker
+            img.c-card__magazineimg(src="image/magazine-checker.png")
+        p(v-text="message")
+        test
+
+      modal(v-show="showModal" @close="showModal=false")
 
     script(src="js/bundle.js")

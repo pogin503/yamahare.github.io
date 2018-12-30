@@ -1,14 +1,13 @@
-<template>
-  <div>
-    <p>{{greeting}}</p>
-  </div>
+<template lang="pug">
+  div
+    p {{greeting}}
 </template>
 
 <script>
 export default{
   data (){
     return{
-      greeting: 'hello'
+      greeting: 'hello',
     }
   }
 }
